@@ -1,0 +1,62 @@
+html
+{
+    box-sizing: border-box;    /* prevents padding from adding extra height and width to the page. */
+}
+
+body
+{
+    background-color: whitesmoke;
+    margin: 10px;
+    min-height: 100vh;      /* 100 view port height. Allows backgound to strech full height of the screen even though the content is not. */
+    font-family: 'Architects Daughter',cursive;
+    
+}
+h1
+{
+    text-align: center;
+    margin-top: 25px;
+    margin-bottom: 20px;
+    font-size: 56px;
+    letter-spacing: 10px;
+}
+.loader
+{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(255, 255, 255, 0.8);
+}
+
+.loader img
+{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.img-container
+{
+    margin: 10px 30%;
+}
+
+.img-container img
+{
+    margin-top: 20px;
+    width: 100%;
+}
+
+/* Media Query for mobile devices */
+@media screen and (max-width: 600px)
+{
+    h1
+    {
+        font-size: 24px;
+    }
+    .img-container
+    {
+        margin: 10px;
+    }
+} 
